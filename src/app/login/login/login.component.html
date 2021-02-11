@@ -1,0 +1,20 @@
+<app-toasts *ngIf="success"></app-toasts>
+<div class="login-form">
+    <form  [formGroup]="login">
+		<div class="avatar">
+			<img src="../../../assets/images/avatar.png" alt="Avatar">
+		</div>
+        <h2 class="text-center">Login</h2>   
+        <div class="form-group">
+        	<input type="text" class="form-control" name="username" placeholder="Username" required="required" formControlName="email">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required" formControlName="password">
+        </div>        
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" (click)="submit()">Sign in</button>
+        </div>
+		
+    </form>
+  
+</div>

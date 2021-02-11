@@ -1,0 +1,6 @@
+<div class="d-flex justify-content-center" *ngIf="!display" >
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+<app-table *ngIf="display" [checkList]="checkList" [addCheck]="displayAddModal" (callGetAPI)="callGetApi($event)"></app-table>
